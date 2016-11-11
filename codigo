@@ -8,7 +8,7 @@ int main(int argc, char *argv[]) {
 	
 	//ordernar alfaveticamente cadena de caracteres (string)
 
-	char c1[a],c2[a],i=0;
+	char c1[a],c2[a],i=0,c3[a];
 
 
 	printf("ingrese la palabra 1 (maximo %d caracteres) ",a);
@@ -18,11 +18,18 @@ int main(int argc, char *argv[]) {
 	fgets(c2,a,stdin);
 	
 	if(strcmp(c1,c2)>0){
-		printf("ordenando... \n1.-%s, 2.-%s",c2,c1);
+		printf("\nordenando... \n1.-%s, 2.-%s",c2,c1);
 	}else{
-		printf("ordenando... \n1.-%s, 2.-%s",c1,c2);
+		printf("\nordenando... \n1.-%s, 2.-%s",c1,c2);
 
 	}
+	
+	printf("ingrese la palabra que desea voltear (maximo %d caracteres) ",a);
+	fgets(c3,a,stdin);
+	
+	strrev(c3);
+	
+	printf("palabra volteada %s",c3);
 	
 //	printf("\n%s%s",c1,c2);
 	
